@@ -1,5 +1,7 @@
 function handleSubmit(event) {
     event.preventDefault()
+    const zip = document.querySelector("#zip").value;
+   console.log(Client.pullWeatherData(zip));
 
     // check what text was put into the form field
     let formText = document.getElementById('name').value
